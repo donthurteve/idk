@@ -414,7 +414,7 @@ MiscTab:CreateButton({
 MiscTab:CreateButton({
     Name = "Give Ultra Luck",
     Callback = function()
-        KnitServices.GamePassService.RE.GiveGamePass:FireServer("Ultra-Luck", "famedbasket")
+        KnitServices.GamePassService.RE.GiveGamePass:FireServer(game:GetService("Players").famedbasket, "Ultra-Luck")
     end,
 })
 
