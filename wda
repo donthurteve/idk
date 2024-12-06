@@ -273,7 +273,7 @@ RaceTab:CreateSlider({
 })
 
 RaceTab:CreateToggle({
-    Name = "Start Farming Wins",
+    Name = "Start Farming Winss",
     CurrentValue = false,
     Callback = function(Value)
         isRunning = Value
