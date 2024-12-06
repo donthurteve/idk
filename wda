@@ -206,7 +206,7 @@ MainTab:CreateButton({
 })
 
 MainTab:CreateButton({
-    Name = "Claim Titan (wait 5 hours)",
+    Name = "Claim Titan (wait 48 hours)",
     Callback = function()
         local x = KnitServices.PlayerDataService.RF.GetAllData:InvokeServer()
         if x.PetsInTitanSlot and typeof(x.PetsInTitanSlot) == "table" then
@@ -412,6 +412,13 @@ MiscTab:CreateButton({
 })
 
 MiscTab:CreateButton({
+    Name = "Give Ultra Luck",
+    Callback = function()
+        KnitServices.GamePassService.RE.GiveGamePass:FireServer("Ultra Luck")
+    end,
+})
+
+MiscTab:CreateButton({
     Name = "Super Rebirth (30+ Rebirths I think)",
     Callback = function()
         KnitServices.RebirthService.RF.SuperRebirth:InvokeServer()
@@ -422,7 +429,7 @@ MiscTab:CreateButton({
 MiscTab:CreateButton({
     Name = "Super Rebirth Upgrades",
     Callback = function()
-        local x = game:GetService("Players").Cupcak3Girl2020.PlayerGui.RebirthUpgradeGui
+        local x = game:GetService("Players").famedbasket.PlayerGui.RebirthUpgradeGui
         x.Enabled = true
     end,
 })
