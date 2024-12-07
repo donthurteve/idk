@@ -412,14 +412,6 @@ MiscTab:CreateButton({
 })
 
 MiscTab:CreateButton({
-    Name = "Give 2000 power",
-    Callback = function()
-        KnitServices.PlayerDataService.RE.StrengthChanged:FireServer(100000)
-        KnitServices.CharacterService.RE.UpdatePlayerStrength:FireServer("Irritatedbasket")
-    end,
-})
-
-MiscTab:CreateButton({
     Name = "Super Rebirth (30+ Rebirths I think)",
     Callback = function()
         KnitServices.RebirthService.RF.SuperRebirth:InvokeServer()
