@@ -419,6 +419,13 @@ MiscTab:CreateButton({
 })
 
 MiscTab:CreateButton({
+    Name = "Train once v2",
+    Callback = function()
+        KnitServices.TrainService.RE.RunTrain:FireServer("Treadmill_3_12")
+    end,
+})
+
+MiscTab:CreateButton({
     Name = "Super Rebirth (30+ Rebirths I think)",
     Callback = function()
         KnitServices.RebirthService.RF.SuperRebirth:InvokeServer()
