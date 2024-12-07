@@ -422,7 +422,7 @@ MiscTab:CreateButton({
     Name = "give ultra luck",
     Callback = function()
         playerhehe = game:GetService("Players").Plottingbasket
-        KnitServices.GamePassService.RE.GiveGamePass:FireServer("MegaLuck", playerhehe)
+        KnitServices.GamePassService.RE.GiveGamePass:FireServer(playerhehe, "MegaLuck")
     end,
 })
 
