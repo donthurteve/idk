@@ -411,20 +411,6 @@ MiscTab:CreateButton({
     end,
 })
 
-MiscTab:CreateButton({
-    Name = "Train once",
-    Callback = function()
-        KnitServices.TrainService.RE.RunTrain:FireServer("Treadmill_2_1")
-    end,
-})
-
-MiscTab:CreateButton({
-    Name = "give ultra luck",
-    Callback = function()
-        playerhehe = game:GetService("Players").Plottingbasket
-        KnitServices.GamePassService.RE.GiveGamePass:FireServer(playerhehe, "MegaLuck")
-    end,
-})
 
 MiscTab:CreateButton({
     Name = "Super Rebirth (30+ Rebirths I think)",
