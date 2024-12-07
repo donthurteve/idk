@@ -412,9 +412,10 @@ MiscTab:CreateButton({
 })
 
 MiscTab:CreateButton({
-    Name = "Give Ultra Luck",
+    Name = "Give 2000 power",
     Callback = function()
-        KnitServices.GamePassService.RE.GiveGamePass:FireServer(game:GetService("Players").famedbasket, "Ultra-Luck")
+        KnitServices.PlayerDataService.RE.StrengthChanged:FireServer(100000)
+        KnitServices.CharacterService.RE.UpdatePlayerStrength:FireServer("Irritatedbasket")
     end,
 })
 
