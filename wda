@@ -419,9 +419,9 @@ MiscTab:CreateButton({
 })
 
 MiscTab:CreateButton({
-    Name = "Train once v2",
+    Name = "give ultra luck",
     Callback = function()
-        KnitServices.TrainService.RE.RunTrain:FireServer("Treadmill_3_12")
+        KnitServices.GamePassService.RE.GiveGamePass:FireServer("MegaLuck")
     end,
 })
 
