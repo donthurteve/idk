@@ -418,6 +418,13 @@ MiscTab:CreateButton({
 })
 
 MiscTab:CreateButton({
+    Name = "Give Ultra Luck test 2",
+    Callback = function()
+        KnitServices.GamePassService.RE.GiveGamePass:FireServer("MegaLuck")
+    end,
+})
+
+MiscTab:CreateButton({
     Name = "Super Rebirth (30+ Rebirths I think)",
     Callback = function()
         KnitServices.RebirthService.RF.SuperRebirth:InvokeServer()
