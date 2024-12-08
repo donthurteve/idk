@@ -446,6 +446,13 @@ MiscTab:CreateButton({
 })
 
 MiscTab:CreateButton({
+    Name = "Index Christmas Robot",
+    Callback = function()
+        KnitServices.PetIndexService.RE.AddPetIndex:FireServer(ChristmasRobot)
+    end,
+})
+
+MiscTab:CreateButton({
     Name = "Super Rebirth (30+ Rebirths I think)",
     Callback = function()
         KnitServices.RebirthService.RF.SuperRebirth:InvokeServer()
