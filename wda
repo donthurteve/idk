@@ -410,7 +410,12 @@ MiscTab:CreateButton({
         KnitServices.AreaService.RE.UpdatePlayerCurrentArea:FireServer("Area_3")
     end,
 })
-
+MiscTab:CreateButton({
+    Name = "Give Blazeleaf",
+    Callback = function()
+        KnitServices.PetService.RE.GivePet:FireServer("e169c370-b5a2-4e55-8e15-93626ac76eec")
+    end,
+})
 
 MiscTab:CreateButton({
     Name = "Super Rebirth (30+ Rebirths I think)",
