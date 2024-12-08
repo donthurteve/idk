@@ -439,9 +439,9 @@ MiscTab:CreateButton({
 })
 
 MiscTab:CreateButton({
-    Name = "Give Pet 1",
+    Name = "Give Future Pet",
     Callback = function()
-        KnitServices.PetService.RE.GivePet:FireServer("ec59bbc7-08a7-47a3-8150-0e13e88d7f34")
+        KnitServices.PetService.RE.GivePet:FireServer("ChristmasFuture", "ec59bbc7-08a7-47a3-8150-0e13e88d7f34", 0, false, 0, false, 0)
     end,
 })
 
