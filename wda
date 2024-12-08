@@ -425,6 +425,27 @@ MiscTab:CreateButton({
 })
 
 MiscTab:CreateButton({
+    Name = "Replicate Equip Pet 1",
+    Callback = function()
+        KnitServices.PetService.RE.ReplicateEquipPet:FireServer("ec59bbc7-08a7-47a3-8150-0e13e88d7f34")
+    end,
+})
+
+MiscTab:CreateButton({
+    Name = "Replicate Equip Pet 2",
+    Callback = function()
+        KnitServices.PetService.RE.ReplicateEquipPet:FireServer()
+    end,
+})
+
+MiscTab:CreateButton({
+    Name = "Give Pet 1",
+    Callback = function()
+        KnitServices.PetService.RE.GivePet:FireServer("ec59bbc7-08a7-47a3-8150-0e13e88d7f34")
+    end,
+})
+
+MiscTab:CreateButton({
     Name = "Super Rebirth (30+ Rebirths I think)",
     Callback = function()
         KnitServices.RebirthService.RF.SuperRebirth:InvokeServer()
