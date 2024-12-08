@@ -448,7 +448,7 @@ MiscTab:CreateButton({
 MiscTab:CreateButton({
     Name = "Index Christmas Robot",
     Callback = function()
-        KnitServices.PetIndexService.RE.AddPetIndex:FireServer(ChristmasRobot)
+        KnitServices.PetIndexService.RE.AddPetIndex:FireServer("ChristmasRobot")
     end,
 })
 
