@@ -410,47 +410,6 @@ MiscTab:CreateButton({
         KnitServices.AreaService.RE.UpdatePlayerCurrentArea:FireServer("Area_3")
     end,
 })
-MiscTab:CreateButton({
-    Name = "Give Ultra Luck",
-    Callback = function()
-        KnitServices.PurchaseService.RE.PurchaseSuccess:FireServer("MegaLuck")
-    end,
-})
-
-MiscTab:CreateButton({
-    Name = "Give Ultra Luck test 2",
-    Callback = function()
-        KnitServices.GamePassService.RE.GiveGamePass:FireServer("MegaLuck")
-    end,
-})
-
-MiscTab:CreateButton({
-    Name = "Replicate Equip Pet 1",
-    Callback = function()
-        KnitServices.PetService.RE.ReplicateEquipPet:FireServer("ec59bbc7-08a7-47a3-8150-0e13e88d7f34")
-    end,
-})
-
-MiscTab:CreateButton({
-    Name = "Replicate Equip Pet 2",
-    Callback = function()
-        KnitServices.PetService.RE.ReplicateEquipPet:FireServer()
-    end,
-})
-
-MiscTab:CreateButton({
-    Name = "Give Future Pet",
-    Callback = function()
-        KnitServices.PetService.RE.GivePet:FireServer("ChristmasFuture", "ec59bbc7-08a7-47a3-8150-0e13e88d7f34", 0, false, 0, false, 0)
-    end,
-})
-
-MiscTab:CreateButton({
-    Name = "Index Christmas Robot",
-    Callback = function()
-        KnitServices.PetIndexService.RE.AddPetIndex:FireServer("ChristmasRobot")
-    end,
-})
 
 MiscTab:CreateButton({
     Name = "Super Rebirth (30+ Rebirths I think)",
