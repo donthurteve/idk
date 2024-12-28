@@ -412,6 +412,13 @@ MiscTab:CreateButton({
 })
 
 MiscTab:CreateButton({
+    Name = "Join W4 (rejoin after clicking)",
+    Callback = function()
+        KnitServices.AreaService.RE.UpdatePlayerCurrentArea:FireServer("Area_4")
+    end,
+})
+
+MiscTab:CreateButton({
     Name = "Super Rebirth (30+ Rebirths I think)",
     Callback = function()
         KnitServices.RebirthService.RF.SuperRebirth:InvokeServer()
